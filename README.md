@@ -2,7 +2,7 @@
 
 This theme is based on the icon theme by [https://freehtml5.co/](https://freehtml5.co/faq/). It is a single-page, responsive theme, with sections for describing your business mission, services, a gallery, your team and a contact form.
 
-![](static/images/screenshot.png)
+![](images/screenshot.png)
 
 ## Installation
 
@@ -14,3 +14,7 @@ $ git clone https://github.com/SteveLane/hugo-icon.git
 ```
 
 ## Getting started
+
+Copy `exampleSite/config.toml` into the root of your website folder, and edit it to your hearts content!
+
+Add `theme = "hugo-fabric"` to this config, or when running, use `hugo -t hugo-icon`
