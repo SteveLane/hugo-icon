@@ -13,5 +13,6 @@ min_version = "0.25.1"
 
 # If porting an existing theme
 [original]
+  author = "freehtml5"
   name = "icon"
   homepage = "https://freehtml5.co/icon-free-website-template-using-bootstrap/"
