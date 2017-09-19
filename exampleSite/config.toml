@@ -1,6 +1,6 @@
 # Main config file for icon theme.
 theme = "icon"
-baseURL = "/"
+baseURL = "https://www.example.com/"
 languageCode = "en-AU"
 title = "My Awesome Title"
 
