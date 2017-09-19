@@ -2,7 +2,7 @@
 
 This theme is based on the icon theme by [https://freehtml5.co/](https://freehtml5.co/faq/). It is a single-page, responsive theme, with sections for describing your business mission, services, a gallery, your team and a contact form.
 
-![](images/screenshot.png)
+![](static/images/screenshot.png)
 
 ## Installation
 
