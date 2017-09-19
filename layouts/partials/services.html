@@ -1,0 +1,28 @@
+<div id="fh5co-services" data-section="services">
+  {{ with .Site.Params.services }}
+  {{ if .video }}
+  <div class="fh5co-video"><a href="{{ with .vidlink }}{{ . }}{{ end }}" class="popup-vimeo"><i class="icon-play2"></i></a> <span>Watch video</span></div>
+  {{ end }}
+  <div class="container">
+    <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+      <h2>{{ .title }}</h2>
+      <p>{{ .description | markdownify }}</p>
+    </div>
+    
+    {{ range .item }}
+    <div class="col-md-4">
+      <div class="service">
+	<div class="icon"><i class={{ .icon }}></i></div>
+	<h3>{{ .title }}</h3>
+	<p>{{ .description | markdownify }}</p>
+      </div>
+    </div>
+    {{ end }}
+    
+    <div class="col-md-12 text-center">
+      <p><a href="#" class="btn btn-primary btn-outline">Get In Touch</a></p>
+    </div>
+    
+  </div>
+  {{ end }}
+</div> <!-- END fh5co-services -->

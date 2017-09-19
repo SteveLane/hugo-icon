@@ -1,0 +1,12 @@
+<div id="fh5co-home" class="js-fullheight-home" data-section="home" style="background-image: url({{ with .Site.Params.hero.img }}{{ . | absURL }}{{ end }});" data-stellar-background-ratio="0.5">
+  <div class="container">
+    <div class="col-md-6">
+      <div class="js-fullheight-home fh5co-copy">
+	<div class="js-fullheight-home fh5co-copy-inner">
+	  <h1>{{ with .Site.Params.hero.title }}{{ . | markdownify }}{{ end }}</h1>
+	  <h2>{{ with .Site.Params.hero.description }}{{ . | markdownify }}{{ end }}</h2>
+	</div>
+      </div>
+    </div>
+  </div>
+</div>

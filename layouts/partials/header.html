@@ -1,0 +1,48 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title> {{ .Site.Title }}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--     <meta name="description" content="Free HTML5 Template by FREEHTML5.CO - Hugo port by interadata" />
+	 <meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive, hugo, static site" />
+	 <meta name="author" content="FREEHTML5.CO / Hugo port " />
+ -->
+{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+{{ with .Site.LanguageCode }}<meta http-equiv="content-language" content="{{ . }}" />{{ end }}
+
+<!-- FREE HTML5 TEMPLATE  -->
+<!-- DESIGNED & DEVELOPED by FREEHTML5.CO -->
+
+<!-- Website:        http://freehtml5.co/ -->
+<!-- Email:          info@freehtml5.co -->
+<!-- Twitter:        http://twitter.com/fh5co -->
+<!-- Facebook:       https://www.facebook.com/fh5co -->
+
+<!-- HUGO TEMPLATE PORTED BY SteveLane-->
+<!-- Website:        https://interadata.io/ -->
+
+<!-- Facebook and Twitter integration -->
+{{ if not .Site.Params.OpenGraph.hide }}
+<meta name="og:site_name" content="{{ .Site.Title }}">
+<meta name="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+<meta name="og:url" content="{{ .Permalink }}">
+<meta name="twitter:title" content="{{ .Site.Title }}" />
+<meta name="twitter:url" content="{{ .Permalink }}" />
+<meta name="twitter:card" content="" />
+{{ end }}
+
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<!-- <link rel="shortcut icon" href="favicon.ico"> -->
+    
+<!-- Animate.css -->
+<link rel="stylesheet" href="css/animate.css">
+<!-- Icomoon Icon Fonts-->
+<link rel="stylesheet" href="css/icomoon.css">
+<!-- Simple Line Icons -->
+<link rel="stylesheet" href="css/simple-line-icons.css">
+<!-- Magnific Popup -->
+<link rel="stylesheet" href="css/magnific-popup.css">
+<!-- Bootstrap  -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<!-- Theme style -->
+<link rel="stylesheet" href="css/style.css">
