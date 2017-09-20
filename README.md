@@ -26,3 +26,7 @@ Add `theme = "hugo-fabric"` to this config, or when serving, use `hugo server -t
 ## Credits
 
 Credit for this theme goes fully to [https://freehtml5.co/](https://freehtml5.co/), which is licensed under a [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) license. If you use this Hugo port, please consider the terms of that license and make proper attribution to [https://freehtml5.co/](https://freehtml5.co/).
+
+## Changelog
+
+A changelog for the initial port by @SteveLane is [here](changelog.md); if you fork this theme and make changes, please list them.
