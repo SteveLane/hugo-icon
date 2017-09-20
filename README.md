@@ -1,6 +1,6 @@
 # Icon Theme
 
-This theme is based on the icon theme by [https://freehtml5.co/](https://freehtml5.co/icon-free-website-template-using-bootstrap/). It is a single-page, responsive theme, with sections for describing your business mission, services, a gallery, your team and a contact form.
+This theme is a Hugo port of the icon theme by [https://freehtml5.co/](https://freehtml5.co/icon-free-website-template-using-bootstrap/). It is a single-page, responsive theme, with sections for describing your business mission, services, a gallery, your team and a contact form.
 
 ![](images/screenshot.png)
 
@@ -22,3 +22,7 @@ Add `theme = "hugo-fabric"` to this config, or when serving, use `hugo server -t
 ## To Do
 
 - add blogging capability
+
+## Credits
+
+Credit for this theme goes fully to [https://freehtml5.co/](https://freehtml5.co/), which is licensed under a [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) license. If you use this Hugo port, please consider the terms of that license and make proper attribution to [https://freehtml5.co/](https://freehtml5.co/).
