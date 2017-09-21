@@ -6,26 +6,33 @@
       <p>{{ .message | markdownify }}</p>
       {{ end }}
     </div>
-    <form action="#" method="post">
+    <form name="contact-form" netlify-honeypot="_gotcha" action="thank-you" netlify>
       <div class="row">
 	<div class="col-md-6">
 	  <div class="form-group">
-	    <input type="text" name="name" class="form-control" placeholder="Your name">
+	    <!-- <label for="inputName">First name</label> -->
+	    <input type="text" class="form-control" id="inputName" placeholder="Your first name">
+	    <!-- <label for="inputLastName">Last name</label> -->
+		<input type="text" class="form-control" id="inputLastName" placeholder="Your last name">
 	  </div>		
 	</div>
 	<div class="col-md-6">
 	  <div class="form-group">
-	    <input type="email" name="email" class="form-control" placeholder="Your email">
+	    <input type="email" class="form-control" id="inputEmail" placeholder="Your email" name="_replyto">
+	    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 	  </div>		
 	</div>
 	<div class="col-md-12">
 	  <div class="form-group">
-	    <textarea name="message" id="" cols="30" rows="7" class="form-control" placeholder="Your message"></textarea>
+	    <textarea class="form-control" id="inputBody" cols="30" rows="7" placeholder="Please enter a message." name="message"></textarea>
 	  </div>		
 	</div>
 	<div class="col-md-12">
 	  <div class="form-group">
-	    <input type="submit" name="submit" value="Send message" class="btn btn-primary btn-outline">
+	    <input type="hidden" name="_subject" value="New website query">
+	    <input type="text" name="_gotcha" style="display:none">
+	    <button type="submit" class="btn btn-primary btn-outline" value="Send">Submit</button>
+	    <!-- <input type="submit" name="submit" value="Send message" class="btn btn-primary btn-outline"> -->
 	  </div>
 	</div>
       </div>
