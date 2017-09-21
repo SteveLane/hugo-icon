@@ -17,7 +17,7 @@ $ git clone https://github.com/SteveLane/hugo-icon.git
 
 Copy `exampleSite/config.toml` into the root of your website folder, and edit it to your hearts content!
 
-Add `theme = "hugo-fabric"` to this config, or when serving, use `hugo server -t hugo-icon`.
+Add `theme = "hugo-icon"` to this config, or when serving, use `hugo server -t hugo-icon`.
 
 ## To Do
 
