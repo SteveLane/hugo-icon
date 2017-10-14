@@ -876,13 +876,10 @@ p {
 }
 
 #fh5co-contact {
-  padding: 7em 0;
+  padding: 3em 0;
+  clear: both;
 }
-@media screen and (max-width: 768px) {
-  #fh5co-contact {
-    padding: 3em 0;
-  }
-}
+
 #fh5co-contact .form-control {
   border: none;
   box-shadow: none;
