@@ -159,6 +159,7 @@ title = "My Awesome Title"
     dribbble = "#"
     instagram = "#"
     github = "#"
+    linkedin = "#"
 
   [[params.team.item]]
     name = "Alice Doe"
