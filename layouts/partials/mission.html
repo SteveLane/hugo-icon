@@ -7,7 +7,7 @@
 	<ul class="fh5co-tabs fh5co-three">
 	  {{ range .Site.Params.mission.item }}
 	  {{ if eq .weight 1}}<li class="active">{{ else }}<li>{{ end }}
-	    <a href="#" data-tab={{ .name }}>{{ .title }}</a>
+	    <a href="#" data-tab={{ .name }}>{{ .title | markdownify }}</a>
 	  </li>
 	  {{ end }}
 	</ul>
@@ -18,7 +18,7 @@
 	{{ else }}
 	<div class="fh5co-tab-content" data-tab-content={{ .name }}>
 	{{ end }}
-	  <h2>{{ .subtitle }}</h2>
+	  <h2>{{ .subtitle | markdownify }}</h2>
 	  {{ .description | markdownify }}
 	</div>
 	{{ end }}
