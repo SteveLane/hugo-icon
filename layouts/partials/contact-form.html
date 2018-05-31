@@ -11,24 +11,24 @@
 	<div class="col-md-6">
 	  <div class="form-group">
 	    <!-- <label for="inputName">First name</label> -->
-		{{ with .Site.Params.contact }}
+		  {{ with .Site.Params.contact }}
 	    <input type="text" class="form-control" id="inputName" placeholder="{{ .name_placeholder }}" name="_name">
-		{{ end }}
+		  {{ end }}
 	  </div>
 	</div>
 	<div class="col-md-6">
 	  <div class="form-group">
+			{{ with .Site.Params.contact }}
 	    <input type="email" class="form-control" id="inputEmail" placeholder="{{ .email_placeholder }}" name="_replyto" required>
-		{{ with .Site.Params.contact }}
 	    <small id="emailHelp" class="form-text text-muted">{{ .email_disclaimer }}</small>
-		{{ end }}
+		  {{ end }}
 	  </div>
 	</div>
 	<div class="col-md-12">
 	  <div class="form-group">
-		{{ with .Site.Params.contact }}
+		  {{ with .Site.Params.contact }}
 	    <textarea class="form-control" id="inputBody" cols="30" rows="7" placeholder="{{ .message_placeholder }}" name="message"></textarea>
-		{{ end }}
+		  {{ end }}
 	  </div>
 	</div>
 	<div class="col-md-12">
