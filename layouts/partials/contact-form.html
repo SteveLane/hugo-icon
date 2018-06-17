@@ -11,25 +11,31 @@
 	<div class="col-md-6">
 	  <div class="form-group">
 	    <!-- <label for="inputName">First name</label> -->
-	    <input type="text" class="form-control" id="inputName" placeholder="Your name" name="_name">
+		  {{ with .Site.Params.contact }}
+	    <input type="text" class="form-control" id="inputName" placeholder="{{ .name_placeholder }}" name="_name">
+		  {{ end }}
 	  </div>
 	</div>
 	<div class="col-md-6">
 	  <div class="form-group">
-	    <input type="email" class="form-control" id="inputEmail" placeholder="Your email" name="_replyto" required>
-	    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+			{{ with .Site.Params.contact }}
+	    <input type="email" class="form-control" id="inputEmail" placeholder="{{ .email_placeholder }}" name="_replyto" required>
+	    <small id="emailHelp" class="form-text text-muted">{{ .email_disclaimer }}</small>
+		  {{ end }}
 	  </div>
 	</div>
 	<div class="col-md-12">
 	  <div class="form-group">
-	    <textarea class="form-control" id="inputBody" cols="30" rows="7" placeholder="Please enter a message." name="message"></textarea>
+		  {{ with .Site.Params.contact }}
+	    <textarea class="form-control" id="inputBody" cols="30" rows="7" placeholder="{{ .message_placeholder }}" name="message"></textarea>
+		  {{ end }}
 	  </div>
 	</div>
 	<div class="col-md-12">
 	  <div class="form-group">
 	    <input type="hidden" name="_subject" value="New website query">
 	    <input type="text" name="_gotcha" style="display:none">
-	    <button type="submit" class="btn btn-primary btn-outline" value="Send">Submit</button>
+	    <button type="submit" class="btn btn-primary btn-outline" value="Send">{{ with .Site.Params.contact }}{{ .button_text }}{{ end }}</button>
 	    <!-- <input type="submit" name="submit" value="Send message" class="btn btn-primary btn-outline"> -->
 	  </div>
 	</div>
