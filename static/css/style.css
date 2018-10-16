@@ -1179,4 +1179,16 @@ p {
   background: url(../images/Preloader_2.gif) center no-repeat #fff;
 }
 
+@media screen and (min-width: 768px) {
+    .equal {
+	display: flex;
+	flex-wrap: wrap;
+    }
+}
+
+/* .equal { */
+/*   display: flex; */
+/*   display: -webkit-flex; */
+/*   flex-wrap: wrap; */
+/* } */
 /*# sourceMappingURL=style.css.map */
