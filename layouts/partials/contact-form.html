@@ -35,6 +35,7 @@
 	  <div class="form-group">
 	    <input type="hidden" name="_subject" value="New website query">
 	    <input type="text" name="_gotcha" style="display:none">
+	      <div data-netlify-recaptcha></div>
 	    <button type="submit" class="btn btn-primary btn-outline" value="Send">{{ with .Site.Params.contact }}{{ .button_text }}{{ end }}</button>
 	    <!-- <input type="submit" name="submit" value="Send message" class="btn btn-primary btn-outline"> -->
 	  </div>
