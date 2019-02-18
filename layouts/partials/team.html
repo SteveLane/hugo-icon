@@ -6,7 +6,7 @@
       <p>{{ .description | markdownify }}</p>
     </div>
     {{ range .item }}
-    <div class="col-md-4">
+    <div class="col-md-4 col-xs-12">
       <div class="person">
 	<img src="{{ .img | absURL }}" alt="" class="img-responsive">
 	<h3>{{ .name }}</h3>
