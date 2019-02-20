@@ -13,6 +13,12 @@
 	<h4>{{ .position }}</h4>
 	<p>{{ .description | markdownify }}</p>
 	<ul class="social">
+	  {{ if isset . "telephone" }}
+	  <li><a href="tel:{{ .telephone }}"><i class="icon-phone"></i></a></li>
+	  {{ end }}
+	  {{ if isset . "email" }}
+	  <li><a href="mailto:{{ .email }}"><i class="icon-envelope"></i></a></li>
+	  {{ end }}
 	  {{ if isset . "facebook" }}
 	  <li><a href="{{ .facebook }}"><i class="icon-facebook"></i></a></li>
 	  {{ end }}
@@ -30,6 +36,9 @@
 	  {{ end }}
 	  {{ if isset . "linkedin" }}
 	  <li><a href="{{ .linkedin }}"><i class="icon-linkedin"></i></a></li>
+	  {{ end }}
+	  {{ if isset . "whatsapp" }}
+	  <li><a href="{{ .whatsapp }}"><i class="icon-whatsapp"></i></a></li>
 	  {{ end }}
 	</ul>
       </div>
