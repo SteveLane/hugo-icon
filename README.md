@@ -19,9 +19,15 @@ Copy `exampleSite/config.toml` into the root of your website folder, and edit it
 
 Add `theme = "hugo-icon"` to this config, or when serving, use `hugo server -t hugo-icon`.
 
-## To Do
+## Adding additional pages
 
-- add blogging capability
+If you'd like to add additional pages, say for a blog, place your content in `/content/blog/` (with an `_index.md` and additional markdown files for each entry).
+
+To link to it from the main menu, add the following line to `layouts/partials/nav.html`:
+
+```html
+<a href="/blog" onclick="location.href='/blog';">Blog</a>
+```
 
 ## Credits
 
