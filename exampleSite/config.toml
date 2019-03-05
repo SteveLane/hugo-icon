@@ -11,7 +11,7 @@ title = "My Awesome Title"
 
 # Hero section (from here on is for icon theme)
 [params.hero]
-  img = "images/hero_bg.jpg"
+  img = "/images/hero_bg.jpg"
   title = "Create awesome things for better web"
   description = "Lovingly hand-crafted by the fine folks at [FreeHTML5.co](http://freehtml5.co/)"
 
@@ -32,13 +32,13 @@ title = "My Awesome Title"
     enable = true
 
     [[params.mission.images.list]]
-      img = "images/img_3.jpg"
+      img = "/images/img_3.jpg"
     [[params.mission.images.list]]
-      img = "images/img_2.jpg"
+      img = "/images/img_2.jpg"
     [[params.mission.images.list]]
-      img = "images/img_1.jpg"
+      img = "/images/img_1.jpg"
     [[params.mission.images.list]]
-      img = "images/img_4.jpg"
+      img = "/images/img_4.jpg"
 
   [[params.mission.item]]
     weight = 1
@@ -106,42 +106,42 @@ title = "My Awesome Title"
   [[params.work.item]]
     title = "Consectetur adipisicing"
     subtitle = "Web Design"
-    img = "images/img_1.jpg"
+    img = "/images/img_1.jpg"
 
   [[params.work.item]]
     title = "Consectetur adipisicing"
     subtitle = "Web Design"
-    img = "images/img_2.jpg"
+    img = "/images/img_2.jpg"
 
   [[params.work.item]]
     title = "Consectetur adipisicing"
     subtitle = "Web Design"
-    img = "images/img_3.jpg"
+    img = "/images/img_3.jpg"
 
   [[params.work.item]]
     title = "Consectetur adipisicing"
     subtitle = "Web Design"
-    img = "images/img_2.jpg"
+    img = "/images/img_2.jpg"
 
   [[params.work.item]]
     title = "Consectetur adipisicing"
     subtitle = "Web Design"
-    img = "images/img_3.jpg"
+    img = "/images/img_3.jpg"
 
   [[params.work.item]]
     title = "Consectetur adipisicing"
     subtitle = "Web Design"
-    img = "images/img_2.jpg"
+    img = "/images/img_2.jpg"
 
   [[params.work.item]]
     title = "Consectetur adipisicing"
     subtitle = "Web Design"
-    img = "images/img_3.jpg"
+    img = "/images/img_3.jpg"
 
   [[params.work.item]]
     title = "Consectetur adipisicing"
     subtitle = "Web Design"
-    img = "images/img_4.jpg"
+    img = "/images/img_4.jpg"
 
 # Team section
 [params.team]
@@ -153,7 +153,7 @@ title = "My Awesome Title"
     name = "Jean Doe"
     position = "Chief legend"
     description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
-    img = "images/person1.jpg"
+    img = "/images/person1.jpg"
     email = "#"
     telephone = "#"
     facebook = "#"
@@ -168,7 +168,7 @@ title = "My Awesome Title"
     name = "Alice Doe"
     position = "Chief overlord"
     description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
-    img = "images/person2.jpg"
+    img = "/images/person2.jpg"
     email = "#"
     telephone = "#"
     facebook = "#"
@@ -182,7 +182,7 @@ title = "My Awesome Title"
     name = "John Doe"
     position = "Chief haranguer"
     description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
-    img = "images/person3.jpg"
+    img = "/images/person3.jpg"
     email = "#"
     telephone = "#"
     facebook = "#"
@@ -196,7 +196,7 @@ title = "My Awesome Title"
   #   name = "Jason Doe"
   #   position = "Chief haranguer"
   #   description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
-  #   img = "images/person3.jpg"
+  #   img = "/images/person3.jpg"
   #   email = "#"
   #   telephone = "#"
   #   facebook = "#"
@@ -228,4 +228,4 @@ title = "My Awesome Title"
   vine = "#"
   linkedin = "#"
   instagram = "#"
-  
+
