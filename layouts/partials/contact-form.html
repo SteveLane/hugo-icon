@@ -5,14 +5,14 @@
       <h2>{{ .title }}</h2>
       <p>{{ .message | markdownify }}</p>
       {{ end }}
-    </div>
-    <form name="contact-form" netlify-honeypot="_gotcha" action="thank-you" netlify>
+	</div>
+	<form action="//formspree.io/{{ with .Site.Params.contact }}{{ .recipient }}{{ end }}" method="post">
       <div class="row">
 	<div class="col-md-6">
 	  <div class="form-group">
 	    <!-- <label for="inputName">First name</label> -->
 		  {{ with .Site.Params.contact }}
-	    <input type="text" class="form-control" id="inputName" placeholder="{{ .name_placeholder }}" name="_name">
+	    <input type="text" class="form-control" id="inputName" placeholder="{{ .name_placeholder }}" name="name">
 		  {{ end }}
 	  </div>
 	</div>
